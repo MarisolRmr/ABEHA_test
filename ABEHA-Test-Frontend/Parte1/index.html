@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-Parte1</title>
+    <link rel="icon" href="images/car1/car1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="back">
+            <div class="back__slide active">
+                <div class="progress"></div>
+            </div>
+            <div class="back__slide">
+                <div class="progress"></div>
+                <div class="back-front-image"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__slide active">
+                <div class="image"></div>
+                
+            </div>
+            <div class="card__slide">
+                <div class="back-image"></div>
+                <div class="image"></div>
+                
+            </div>
+
+
+            <div class="content">
+                <div class="content__slide active" style="text-align: right;">
+                    <h2 class="title">
+                        <span class="title__line">
+                            <span class="title__inner">
+                                <img src="images/car1/car1-logo.png">
+                            </span>
+                        </span>
+                    </h2>
+                    
+                    <div class="desc">
+                        <h2>64kWh BATERÍA</h2>
+                        <h2>600 Nm TORQUE</h2>
+                        <h2>320kW POTENCIA</h2>
+                        <h2>385km AUTONOMÍA MÁXIMA</h2>
+                        <h2>3.8s ACELERACIÓN (0-100 KM/H)</h2>
+                    </div>
+                    
+                    <div class="button-wrap"><a class="button">Change<span class="button__hover"></span></a></div>
+                </div>
+
+                <div class="content__slide">
+                    <h2 class="title">
+                        <span class="title__line">
+                            <span class="title__inner">
+                                <img src="images/car2/car2-logo.png">
+                            </span>
+                        </span>
+                    </h2>
+
+                    <div class="desc">
+                        <h2>77kWh BATERÍA</h2>
+                        <h2>350 Nm TORQUE</h2>
+                        <h2>180kW POTENCIA</h2>
+                        <h2 style="color:black">520km AUTONOMÍA</h2>
+                        <h2 style="color:black">6.5s ACELERACIÓN</h2>
+                    </div>
+                    
+                    
+                    <div class="button-wrap"><a class="button">Change<span class="button__hover"></span></a></div>
+                </div>
+
+                <div class="content__ping content__ping--noanimation"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

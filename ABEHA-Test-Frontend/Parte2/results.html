@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test-Parte2</title>
+    <link rel="icon" href="user.jpg" type="image/png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"/>
+    <link rel="stylesheet" href="results.css" />
+  </head>
+  
+  <body>    
+    <div class="container">
+      <aside>
+        <div class="top">
+          <a href="#" class="logo-wrapper">
+            <img
+              class="logo-img"
+              src="logo.png"
+              alt="Open Props logo"
+              width="160"
+              height="29.44"
+            />
+          </a>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> dashboard </span>
+            <h3>Dashboard</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <div style="display: flex; justify-content:space-between">
+            <div class="top">
+              <h1>Test Front-End</h1>
+            </div>
+
+            <div class="right">
+            <div class="top">
+              <button id="menu-btn">
+                <span class="material-icons-sharp"> menu </span>
+              </button>
+              <div class="theme-toggler">
+                <span class="material-icons-sharp active"> light_mode </span>
+                <span class="material-icons-sharp"> dark_mode </span>
+              </div>
+              <div class="profile">
+                <div class="info">
+                  <p>Hey, <b>ABEHA</b></p>
+                  <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                  <img src="user.jpg" alt="Profile Picture" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <h2>Todos los Artistas</h2>
+       
+        <div class="carousel-container" style="display: flex; justify-content: center;     align-items: center;">
+          <button id="preview"> < </button>
+
+            <div class="carousel" style="  display: flex;">
+              <!-- SALES -->
+            </div>
+
+            <button id="next">  > </button>
+        </div>
+
+        <br><br><br>
+        <h2>1.- Vendido más de 1’000,000 de copias.</h2>
+
+        <div class="recent-orders">
+          <table id="recent-orders--table">
+            <thead>
+              <tr>
+                <th>Ventas</th>
+                <th>Album</th>
+                <th>Artista</th>
+              </tr>
+            </thead>
+            
+          </table>
+        </div>
+
+        <br><br><br>
+        <div class="total">
+          <h2>2.- Total de copias vendidas de todos los álbumes:</h2>
+        </div>
+        
+        <br><br><br>
+        <h2>3.- El nombre tiene más de 8 caracteres</h2>
+
+        <div class="recent-orders">
+          <table id="recent-orders--table2">
+            <thead>
+              <tr>
+                <th>Artista</th>
+              </tr>
+            </thead>
+            
+          </table>
+        </div>
+
+        <br><br><br>
+        <div class="total">
+          <h2>4.- Funciones</h2>
+          <h1>Creadas</h1>
+        </div>
+
+        <br><br><br>
+        <h2>5.- Con las funciones creadas ... </h2>
+        <br><br>
+
+        <div style="display: flex; justify-content:center; margin-right:10px;">
+          <button class="btn-purple" id="remove">Borrar a los artistas Adele, Prince y Justin Bieber</button>
+          <button class="btn-purple" id="add">Agregar al artista Radiohead con su álbum Ok Computer que vendió 5,000,000 de copias</button>
+        </div>
+
+        <div class="recent-orders">
+          <table id="recent-orders--table3">
+            <thead>
+              <tr>
+                <th>Artista</th>
+                <th>Album</th>
+                <th>Sales</th>
+              </tr>
+            </thead>
+            
+          </table>
+        </div>
+
+        <br><br><br>
+        
+        <div style="display: flex;">
+          <input class="input-purple" type="text" id="busqueda" placeholder="Ingresa algo...">
+          <button class="btn-purple" id="buscar">Buscar</button>
+        </div>
+
+        <div class="recent-orders">
+          <table id="recent-orders--table4" style="display: none;">
+            <thead>
+            </thead>
+            
+          </table>
+        </div>
+
+        <br><br><br>
+
+      </main>
+
+      
+    </div>
+
+    <script src="results.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
